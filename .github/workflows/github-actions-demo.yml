@@ -18,7 +18,7 @@ jobs:
         uses: google-github-actions/deploy-cloud-functions@v1
         with:
           name: webhookDev
-          runtime: Node.js 20
+          runtime: nodejs20
           entrypoint: index.js
           trigger: http
           region: asia-southeast2
