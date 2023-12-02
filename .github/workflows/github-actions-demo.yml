@@ -26,3 +26,4 @@ jobs:
           entrypoint: index.js
           trigger: http
           region: asia-southeast2
+          allow_unauthenticated: true
