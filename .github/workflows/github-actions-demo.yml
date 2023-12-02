@@ -10,10 +10,18 @@ on:
       - 'readme.md'
 
 jobs:
+
+
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: create env file
+        run: |
+          touch .env
+          echo "TELEGRAM_TOKEN=KOKOKOKOKOK" >> .env
+          
+
       - uses: google-github-actions/setup-gcloud@v0
       - uses: google-github-actions/auth@v1
         with:
