@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 // const { Logging } = require('@google-cloud/logging');
 const TelegramBot = require("node-telegram-bot-api");
 
