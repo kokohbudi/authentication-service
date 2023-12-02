@@ -29,4 +29,9 @@ app.post('/', (req, res) => {
   return;
 });
 
+app.get('/', (req, res) => {
+    res.send('OK');
+    return;
+});
+
 exports.webhook = app;
