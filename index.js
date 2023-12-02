@@ -30,7 +30,7 @@ app.post('/', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const token = process.env.TELEGRAM_TOKEN;
     res.send(token);
     return;
 });
