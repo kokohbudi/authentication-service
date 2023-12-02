@@ -27,3 +27,5 @@ jobs:
           trigger: http
           region: asia-southeast2
           allow_unauthenticated: true
+          update_env_vars: false
+
