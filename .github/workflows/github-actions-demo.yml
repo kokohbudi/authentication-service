@@ -20,7 +20,7 @@ jobs:
       - name: Deploy Cloud Function
         uses: google-github-actions/deploy-cloud-functions@v1
         with:
-          name: webhookDev2
+          name: webhook
           runtime: nodejs20
           entrypoint: index.js
           trigger: http
